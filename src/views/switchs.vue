@@ -29,15 +29,13 @@
 <style type="text/css">
 	
 	[slot="one"] > div{
-		float: left;
 		border: 1px solid #ccc;
-		border-left: none;
 		width: 33.333%;
-		line-height: 40px
-
+		line-height: 40px;
 	}
 
 	[slot="one"]{
+		display: flex;
 		background: #E8E8E8;
 	    width: 100%;
 	    float: left;
@@ -47,7 +45,8 @@
 		border-left: 1px solid #ccc!important;	
 	}
 	.sle {
-		background: #000;
+		background: red;
 		color: #fff;
+		transition: 1s;
 	}
 </style>

@@ -14,11 +14,23 @@
 </div>
 </template>
 <style type="text/css">
-.admin-panel{
-  background-color: white;
-}
-.leftmenu-borad{
-  border-right: 1px black solid;
-  height: 800px;
-}
+@media(min-width: 1200px){
+    .admin-panel{
+      background-color: pink;
+      width: 1170px;
+    }
+    .leftmenu-borad{
+      height: 800px;
+    }
+  }
+ @media screen and (min-width:990px) and (max-width: 1199px){
+  .admin-panel{
+      background-color: pink;
+      width: 96%;
+    }
+    /*.leftmenu-borad{
+      height: 800px;
+    }*/
+ }
+
 </style>

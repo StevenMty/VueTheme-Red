@@ -1,7 +1,7 @@
 <template>
     <div>
     <!-- row：一行显示几张图片 默认：3张 -->
-     <thumbnail row="4">
+     <thumbnail row="3">
      </thumbnail>
     </div>
 </template>
