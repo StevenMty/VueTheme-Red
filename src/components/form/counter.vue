@@ -79,13 +79,25 @@
     border:1px solid #a9a9a9;
     width: 50px;
 }
+.btn-nums-horizontal{
+  width: 14px;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-size: 16px;
+  outline: none;
+}
 .counter-input-horizontal:focus{
     outline: none;
     border:1px solid #a9a9a9;
 }
+.counter-input-horizontal{
+  text-align: center;
+  border: 1px solid black;
+}
 .counter-input-vertial{
     height: 37px;
     width:70px;
+    text-align: center;
 }
 .counter-input-vertial:focus{
     outline:none;

@@ -15,7 +15,7 @@
   }
 
   input[type=radio]{
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;
     appearance: none;
     width: 13px;
     height: 13px;
@@ -32,7 +32,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
-    transition: .28s;
+    transition: .28s;*/
 
   }
   input[type=radio]:focus{
@@ -59,11 +59,9 @@
     width: 15px;
     height: 15px;
   }
-
   input[type=radio]:checked {
     background: #fff;
   }
-
   input[type=radio]:checked::after {
     content: '';
     display: block;

@@ -47,13 +47,31 @@
  };
  </script>
 <style type="text/css">
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+    width: 100% !important;
+  }
 ul.left-menu{
   list-style: none;
 }
 ul.left-menu li{
-    min-height: 40px;
-    line-height: 40px;
-    border-bottom: 1px black solid;
+    /*min-height: 40px;
+    line-height: 40px;*/
+    border: none !important;
+    background-color: #fff;
+}
+ul.left-menu li:hover{
+  background-color: #eeeed1;
+
+}
+ul.left-menu li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 </style>

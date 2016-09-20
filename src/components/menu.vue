@@ -50,6 +50,13 @@
  };
 </script>
 <style type="text/css">
+* ul{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0 auto;
+}
 .navbar-fixed-top .navbar-toggle{
   z-index: 1;
 }
@@ -65,17 +72,18 @@
   visibility: visible;
 }
 .navbar-brand{
-  font-size: 25px;
-  padding-top: 21px;
-  color: black;
+  font-size: 2em;
+  padding-top: 15%;
+  color: #ffffff;
   font-weight: bold;
 }
 .navbar-right{
-  background-color: white;
+  background-color: #2196F3;
+  display: flex;
 }
 .navborder-red {
-  border-bottom: 1px red solid;
-  background-color: white;
+  background-color: #2196F3;
+  width: 90%;
 }
 .navborder-red .icon-bar {
   background-color: #888;
@@ -83,19 +91,23 @@
 }
 .navbar-nav>li>a{
     font-weight: bold;
-    font-size: 11px;
+    font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #777777;
+    color: #ffffff;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     transition: all .5s ease;
     padding-bottom: 40px;
     padding-top: 30px;
     display: inline-block;
-    line-height: 14px;
+    line-height: 30px;
     cursor: pointer;
     width: 100%;
+}
+.navbar-nav>li>a:hover{
+  text-decoration: none;
+  background-color: #3F51B5 ;
 }
 .navbaranimal{
     transform:translateY(100px);
@@ -109,6 +121,12 @@
   transform: translate3d(0px, 0px, 0px)!important;
 }
 @media (max-width: 780px) {
+  .navbar-brand{
+    font-size: 2em;
+    padding-top: 5%;
+    color: #ffffff;
+    font-weight: bold;
+  }
   .navbar-nav>li>a{
     padding-bottom: 15px;
     padding-top: 15px;

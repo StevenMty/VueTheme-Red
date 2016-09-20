@@ -1,7 +1,7 @@
 h<template>
     <div>
     <button  @click="showmodal">Show Modal</button>
-    <modal :show.sync="showModal">
+    <modal :show.sync="show">
        <h3 slot="header">提示消息</h3>
        <h3 slot="body">这是一个对话框！</h3>
   </modal>
@@ -15,7 +15,7 @@ h<template>
         },
         data() {
             return {
-                showModal:false
+                show:false
             };
         },
         compiled() {
@@ -23,14 +23,8 @@ h<template>
         },
         methods: {
            showmodal(){
-                this.showModal = true;
+                this.show = true;
             },
-            handleCancel(){
-                this.showModal = false;
-            },
-            handleSubmit(){
-                this.showModal = false;
-            }
         }
     };
 </script>

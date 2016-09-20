@@ -4,17 +4,17 @@ Taoxin   2016-05-19
 
  <template>
      <div class="search-bar">
-     <ul class="search-menu">
-        <li >
-        <a>{{queryOne}}</a>
-          <ul class="childs">
-            <li><a @click="choose">{{queryTwo}}</a></li>
-          </ul>
-        </li>
-      </ul>
-      <input class="form-control input-search-bar" :placeholder="placeholder" v-model="value"/>
-      <button class="btn-search-bar" @click="search">搜索</button>
-    </div>
+       <ul class="search-menu">
+          <li >
+          <a>{{queryOne}}</a>
+            <ul class="childs">
+              <li><a @click="choose">{{queryTwo}}</a></li>
+            </ul>
+          </li>
+        </ul>
+        <input class="form-control input-search-bar" :placeholder="placeholder" v-model="value"/>
+        <button class="btn-search-bar" @click="search">搜索</button>
+      </div>
  </template>
 <script>
   module.exports = {
@@ -62,23 +62,19 @@ Taoxin   2016-05-19
 
  <style type="text/css">
  .search-bar{
-    width: 600px;
-    float: left;
-    border:2px solid red;
+    width: 600px;display: flex;
+    border:1px solid #ccc;
  }
  .dropdown-search-bar{
-    float: left;
     width: 400px;
  }
  .btn-search-bar{
-    float: left;
     width: 100px;
     height: 35px;
 
  }
 .input-search-bar{
     width: 416px;
-    float: left;
     height: 35px;
     border-radius: 0px;
 }
@@ -134,7 +130,7 @@ Taoxin   2016-05-19
 }
 
 .search-menu li a {
-    border:1px solid #f3f3f3;
+    /*border:1px solid #f3f3f3;*/
     color:black;
     display:block;
     font-size:18px;
@@ -151,17 +147,16 @@ Taoxin   2016-05-19
 .search-menu li:hover > a {
     /*background:#8CCA33;*/
     color:red;
-    border-bottom:1px solid red;
+    /*border-bottom:1px solid red;*/
     background-image: url('../../../static/img/arrow_1.png');
     background-repeat:no-repeat;
 }
 ul.childs li a{
   background-image: none;
-  border: 1px solid red;
 } 
 ul.childs li a:hover{
   background-image: none;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 } 
 
 .search-menu li:hover ul.childs {
@@ -185,7 +180,7 @@ ul.childs li a:hover{
 }
 
 .search-menu ul li a:hover {
-    border: 1px solid red;
+    background-color: #ccc;
 }
 
  </style>
