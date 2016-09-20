@@ -3,7 +3,7 @@
      <div class="last" v-on:click="nex(2)">
        <div>
        </div>
-       《
+       &lt
      </div>
       <div class="slick-track" >
      		<slot>
@@ -19,7 +19,7 @@
       <div class="nex" v-on:click="nex(1)">
       <div>
        </div>
-         》
+         &gt
      </div>
     </div>
 </template>

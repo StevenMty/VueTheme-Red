@@ -104,12 +104,13 @@
         height: 300px;
         position: relative;
         z-index: 99999;
+        border-radius: 3%;
     }
     .modal-header {
         min-height: 16.43px;
         padding: 0px; 
         border-bottom: 1px solid #e5e5e5;
-        background: #e5e5e5;
+        background: #F5F5F5;
         text-align: left;
     }
     .modal-header p {
@@ -163,6 +164,17 @@
     }
     .modal-header .close {
         margin: 6px 15px;
+        -webkit-transition: -webkit-transform 0.2s ease-out;
+        -moz-transition: -moz-transform 0.2s ease-out;
+        -o-transition: -o-transform 0.2s ease-out;
+        -ms-transition: -ms-transform 0.2s ease-out;
+    }
+    .modal-header .close:hover{
+        -webkit-transform: rotateZ(180deg);
+        -moz-transform: rotateZ(180deg);
+        -o-transform: rotateZ(180deg);
+        -ms-transform: rotateZ(180deg);
+        transform: rotateZ(180deg);
     }
     .modal-footer {
         padding: 0 0 15px 0;

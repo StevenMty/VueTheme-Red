@@ -42,6 +42,8 @@ Taoxin  2016-05-19
 
 .dropdown-nav {
     position:relative;
+    display: flex;
+
 }
 
 .dropdown-nav ul {
@@ -53,7 +55,6 @@ Taoxin  2016-05-19
 }
 
 .dropdown-nav li {
-    float:left;
     position:relative;
 }
 
@@ -62,8 +63,8 @@ Taoxin  2016-05-19
     -o-transition:0.5s;
     -webkit-transition:0.5s;
     /*background-color:#7770B4;*/
-    border:1px solid #6E67A6;
-    color:black;
+    /*border:1px solid #6E67A6;*/
+    color:white;
     display:block;
     /*font-size:16px;*/
     line-height:10px;
@@ -71,6 +72,7 @@ Taoxin  2016-05-19
     text-decoration:none;
     transition:0.5s;
     width: 100px;
+    background-color: #7a67ee;
 }
 
 .dropdown-nav li:hover > a {
@@ -120,11 +122,11 @@ Taoxin  2016-05-19
 }
 ul.subs li a{
   background-image: none;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 } 
 ul.subs li a:hover{
   background-image: none;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 } 
 
 .dropdown-nav li:hover ul li a {

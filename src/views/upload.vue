@@ -1,7 +1,7 @@
 <template>
     <div class="p-button">
         <upload :uploadurl.sync='url'></upload>
-        <span>{{url}}</span>
+        <a>{{url}}</a>
     </div>
 </template>
 <script>
@@ -28,5 +28,9 @@
     border-radius: 5px;
     background-color: greenyellow;
     line-height: 40px;
+  }
+  a{
+    text-decoration: none !important;
+    cursor: pointer;
   }
 </style>
