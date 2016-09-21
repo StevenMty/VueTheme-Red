@@ -4,10 +4,10 @@
       <ul class="nav-menu">
         <li v-for="menu in data"><a href="{{menu.url}}">{{menu.text}}</a>
           <ul class="subs" v-if="menu.childItem">
-            <li  v-for="child in menu.childItem">
+            <li  v-for="child in menu.childItem" class="first-li">
               <div class="subs-content">
                 <div class="subs-title"><img src="http://temp.im/24x24">{{child.text}}</div>
-                 <a v-for="sub in child.subItems" class="subs-text-a" style="border:none;float:left;width:auto;" href="http://www.baidu.com" target="_blank">{{sub.text}}</a>
+                 <a v-for="sub in child.subItems" class="subs-text-a" style="border:none;float:left;magin-left:30px;width:auto;" href="http://www.baidu.com" target="_blank">{{sub.text}}</a>
               </div>
             </li>
           </ul>
@@ -73,7 +73,6 @@
     text-decoration:none;
     transition:0.5s;
   }
-
   .nav-menu li:hover > a {
     background:blue;
     border:1px solid #ffffff;

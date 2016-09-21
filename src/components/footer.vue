@@ -3,7 +3,6 @@
 		<div class="col-xs-12 col-sm-9 bg-left">
 			<span class="text-white">© 2016 Hades.</span>
 			<span class="text-white"><a href="#">hi@iamhades.com</a></span>
-			<span class="text-white"></span>
 			<span class="text-white">上海中山公园</span>
 		</div>
 		<div class="col-xs-12 col-sm-3 bg-right">
@@ -17,7 +16,10 @@
 .bg-left{
 	 background-color: #e74c3c !important;
 	 height: 150px;
-	 padding-top: 70px;
+	 line-height: 150px;
+	 display: flex;
+	 flex-flow: row;
+	 justify-content: space-around;
 }
 .bg-left a{
 	 color: #fff;
@@ -25,7 +27,7 @@
 .bg-right{
 	 background-color: #bf2718 !important;
 	 height: 150px;
-	 padding-top: 70px;
+	 line-height: 150px;
 }
 .container, .container-fluid {
     margin-right: auto;
