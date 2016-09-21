@@ -3,7 +3,7 @@ Taoxin  2016-05-19
 -->
 
 <template>
-  <div class="dropdown" style="height:200px">
+  <div class="dropdown" style="height:200px;position:relative;">
    <ul class="dropdown-nav">
         <li v-for="menu in data"><a >{{menu.text}}</a>
             <ul class="subs" v-if="menu.childItem">
@@ -41,17 +41,18 @@ Taoxin  2016-05-19
 }
 
 .dropdown-nav {
-    position:relative;
+    
     display: flex;
-
+    position:absolute;
+    top:23px;
+    left: 17%;
 }
 
 .dropdown-nav ul {
     height:0;
     left:0;
     overflow:hidden;
-    position:absolute;
-    top:23px;
+
 }
 
 .dropdown-nav li {

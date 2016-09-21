@@ -81,8 +81,6 @@
 }
 .btn-nums-horizontal{
   width: 14px;
-  border-radius: 50%;
-  border: 1px solid black;
   font-size: 16px;
   outline: none;
 }

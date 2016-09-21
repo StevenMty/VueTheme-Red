@@ -85,7 +85,8 @@
     background: #fcf8e3;
     text-align: left;
     padding: 10px;
-    font-weight: 500;
+    /*font-weight: 500;*/
+    border-radius: 5% 10%;
   }
   a.close {
     margin-top: -3px;
