@@ -2,16 +2,12 @@
     <div class="scroll">
      <scrollmonitor >
      	<div slot="srcone">
-     		<div >
-     			我们是共产主义接班人
-     		</div>
-     		<div >
-     			东方红
-     		</div>
+     		
+     		
      	</div>
-     	<div slot="srctwo">
+     	<div slot="srctwo" class="srctwo">
      		<div id="a">
-				我们是共产主义接班人<br>
+     		<h3>我们是共产主义接班人</h3>
 				我们是共产主义接班人， 　<br>　
 				继承革命先辈的光荣传统， 　　<br>
 				爱祖国，爱人民， 　　<br>
@@ -34,7 +30,7 @@
 				我们是共产主义接班人。
      		</div>
      		<div id="b">
-     			
+     			<h3>东方红</h3>
 				蓝格呀呀格个天上飘来一个大大云<br>
 				三哥哥今天要出远门<br>
 				刮风下雨打雷声<br>
@@ -76,5 +72,11 @@ import scrollmonitor from './../components/scrollmonitor.vue';
 <style >
 	.scroll{
 		width: 100%
+	}
+	.srctwo{
+		width: 80%;
+		display: flex;
+		flex-flow: row;
+		justify-content: space-around;
 	}
 </style>

@@ -578,7 +578,7 @@
   .cov-picker-box td:hover {
     background: #E6E6E6;
   }
-
+  
   table {
     border-collapse: collapse;
     border-spacing: 0;

@@ -61,22 +61,14 @@
     cursor: pointer;
     top: 50%;visibility: hidden;
   }
-  /*@keyframes move{
-    0%{position: absolute;left: 0;}
-    20%{position: absolute;left: -35px;}
-    40%{position: absolute;left: -70px;}
-    60%{position: absolute;left: -105px;}
-    80%{position: absolute;left: -140px;}
-    100%{position: absolute;left: -175px;}
-  }*/
   @media screen and (max-width: 780px){
   .leftmenu-borad{
     /*animation:move 0.5s infinite;
     -webkit-animation:move 0.5s infinite;*/
     visibility: hidden;
   }
-   .button-hide{
+   /*.button-hide{
     visibility: visible;
-   }
+   }*/
 }
 </style>

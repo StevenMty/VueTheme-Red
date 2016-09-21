@@ -112,6 +112,7 @@
         border-bottom: 1px solid #e5e5e5;
         background: #F5F5F5;
         text-align: left;
+        background-color: #B9D3EE;
     }
     .modal-header p {
         /*margin-top: 0;*/
@@ -180,5 +181,16 @@
         padding: 0 0 15px 0;
         text-align: justify;
         border-top: none; 
+    }
+    button{
+        border: none;
+        background-color:  #FF8C00;
+        border-radius: 2px;
+    }
+    button:hover{
+        background-color: #DAA520;
+        transition: 1s;
+        color: white;
+        border-radius: 2px;
     }
 </style>

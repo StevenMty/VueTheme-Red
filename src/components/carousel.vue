@@ -215,7 +215,8 @@
     position: absolute;
     z-index: 1;
     font-size: 40px;
-    height: 100%
+    height: 100%;
+    width:15px;
   }
 
   .last > div , .nex > div{
@@ -223,9 +224,10 @@
     width: 100%
   }
 
-.last:hover ,.nex:hover{
-   color: red
-}
+  .last:hover ,.nex:hover{
+    color: red;
+    cursor: pointer;   
+  }
 
   .last{
     left: 10px;

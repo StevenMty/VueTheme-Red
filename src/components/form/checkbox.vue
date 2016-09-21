@@ -15,9 +15,10 @@
 </template>
 <style>
   .md-checkbox {
-    width: 100px;
+    width: 120px;
     height: 30px;
     text-align: left;
+    /*background-color: red;*/
   }
   input[type=checkbox] {
     -webkit-appearance: none;
@@ -51,8 +52,8 @@
     left: -9px;
     width: 12px;
     height: 22px;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
     border-right: 2px solid #1B5E20;
     border-bottom: 2px solid #1B5E20;
     transform: rotate(40deg);

@@ -26,15 +26,20 @@
 </script>
 
 <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
   .filters {
     padding: 0px;
     list-style: none;
     overflow: hidden;
     display: inline-block;
     margin-bottom: 32px;
+    margin-left: 38%;
+    display: flex;
 }
 .filters li {
-    float: left;
     margin-right: 16px;
     font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;

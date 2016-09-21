@@ -38,7 +38,7 @@
 	};
 </script>
 <style type="text/css">
-	.if{
+	/*.if{
 		min-height:600px;
-	}
+	}*/
 </style>

@@ -78,7 +78,7 @@ Taoxin  2016-05-19
 .dropdown-nav li:hover > a {
     /*background:#8CCA33;*/
     border-color:#6E67A6;
-    color:red;
+    /*color:red;*/
 }
 
 .dropdown-nav li:hover ul.subs {

@@ -18,12 +18,6 @@
   };
 </script>
 <style type="text/css">
-  .scrollR{
-      float: right;
-  }
-  .scrollL{
-      float: left; 
-  }
   .scrollR > div >div{
       line-height: 40px;
       text-align: left;

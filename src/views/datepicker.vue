@@ -1,11 +1,11 @@
 <template>
   <div style="text-align: left">
       <div class="form-group">
-        <span>Return Date：</span>
+        <p>Return Date：</p>
         <datepicker :time.sync="endtime" :option="option"></datepicker>
       </div>
       <div class="form-group">
-        <span>datetime：</span>
+        <p>datetime：</p>
         <datepicker :time.sync="testTime" :option="timeoption"></datepicker>
       </div>
     <div class="form-group">
@@ -75,3 +75,10 @@
 
   };
 </script>
+<style type="text/css">
+  p{
+    display: inline-block;
+    text-align: right;
+    width: 100px;
+  }
+</style>

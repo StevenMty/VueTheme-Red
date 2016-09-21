@@ -33,12 +33,16 @@
 		width: 33.333%;
 		line-height: 40px;
 	}
-
+	[slot="one"] > div:hover{
+		background-color: #EE6363;
+		transition: 1s;
+		cursor: pointer;
+	}
 	[slot="one"]{
 		display: flex;
 		background: #E8E8E8;
 	    width: 100%;
-	    float: left;
+	    display: flex;
 	}
 
 	[slot="one"] div:first-child{
