@@ -801,7 +801,8 @@
 
   .hour-item, .min-item {
     padding: 10px;
-    font-size: 36px;
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
   }
 

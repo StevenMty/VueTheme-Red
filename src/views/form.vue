@@ -79,7 +79,7 @@
           <mdalert :show.sync="showAlert" :text.sync="title" :type="type4" :hide.sync="showColse2"></mdalert>
         </div>
         <div class="col-lg-12 col-md-12"> 
-          <countdown slot="value" :time="time" :start="start" :onfinished="finishSend" v-show="start"></countdown>
+          <!-- <countdown slot="value" :time="time" :start="start" :onfinished="finishSend" v-show="start"></countdown> -->
           <button @click="finishSend" v-if="start">stop</button>
           <div v-else>
           <button @click="startSend" >start</button>

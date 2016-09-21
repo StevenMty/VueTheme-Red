@@ -285,15 +285,20 @@
 </script>
 <style type="text/css">
     .dataTables_info{
-     margin-top: 20px;
- }
- .thead_th{
-    text-align: center;
-}
-.paginate_active{
-  border: 1px red solid!important;
-  border-radius: 5px;
-  z-index: 2;
-}
-
+         margin-top: 20px;
+     }
+     .thead_th{
+        text-align: center;
+    }
+    .paginate_active{
+      border: 1px red solid!important;
+      border-radius: 5px;
+      z-index: 2;
+    }
+    .table{
+        background-color: #fff !important;
+    }
+    tr:nth-child(even){
+      background-color:#E8E8E8; 
+    }
 </style>

@@ -9,8 +9,8 @@
         <datepicker :time.sync="testTime" :option="timeoption"></datepicker>
       </div>
     <div class="form-group">
-      <br> Return Date：{{endtime}}
-      <br> DateTime：{{testTime}}
+      <div>Return Date：{{endtime}}</div>
+      <div>DateTime：{{testTime}}</div>
     </div>
   </div>
 
