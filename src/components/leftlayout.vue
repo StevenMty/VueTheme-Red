@@ -37,8 +37,7 @@
   .admin-panel{
     width: 90% !important;
     background-color: #F7F7F7;
-    margin: 0 auto;
-   /* padding: 0;*/
+    margin-top: 75px;
   }
   .row{
     width: 100%;

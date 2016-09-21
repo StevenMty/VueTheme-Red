@@ -1,6 +1,6 @@
 <template>
     <div class="slick-trackT">
-     <div class="last" v-on:click="nex(2)">
+     <div class="last" v-on:click="nex(2)" onselectstart="return false">
        <div>
        </div>
        &lt

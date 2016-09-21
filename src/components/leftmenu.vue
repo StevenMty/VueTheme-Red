@@ -1,6 +1,7 @@
 <template>
   <div class="navbar">
       <div class="">
+          <div class="img-g" style="background-color:white;"><a href="https://www.xgou168.com/"><img src="./../../static/img/logo.png"></a></div>
            <ul class="left-menu" >
              <li v-for="menu in data">
                 <a v-if="!menu.child" @click="goto(menu.url)">{{menu.text}}</a>

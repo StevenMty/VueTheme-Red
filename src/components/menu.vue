@@ -83,7 +83,11 @@ body{
 }
 .navborder-red {
   background-color: #2196F3;
-  width: 90%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: center;
+  z-index: 9999;
 }
 .navborder-red .icon-bar {
   background-color: #888;
