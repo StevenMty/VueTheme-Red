@@ -11,7 +11,7 @@
           <a class="navbar-brand hidden-sm" href="">VueTheme-Red</a>
         </div>
         <div class="navbar-collapse" style="height: 1px;" :class="{showbyopacity:isShow,navbaran:isShow}">
-          <ul class="nav navbar-nav navbar-right" :class="{showtranslate:isShow}">
+          <ul class="nav navbar-nav navbar-right" :class="{showtranslate:isShow}" style="z-Index:999">
             <li v-for="menu in data"><a href="/#{{menu.url}}">{{menu.text}}</a></li>
             <li class="hidden-sm"><a href="#">About</a></li>
             <li class="bgc-navbar">
