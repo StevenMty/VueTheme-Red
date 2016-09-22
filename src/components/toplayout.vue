@@ -14,8 +14,9 @@
 <script>
 </script>
 <style type="text/css">
-.main-container .view{
+ .main-container .view{
   text-align: center;
+  margin-top: 90px;
 }
 .footer-container{
   position: absolute;

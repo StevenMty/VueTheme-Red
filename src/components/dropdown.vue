@@ -41,11 +41,9 @@ Taoxin  2016-05-19
 }
 
 .dropdown-nav {
-    
     display: flex;
-    position:absolute;
-    top:23px;
-    left: 17%;
+    /*position:absolute;
+    top:23px;*/
 }
 
 .dropdown-nav ul {
@@ -57,6 +55,7 @@ Taoxin  2016-05-19
 
 .dropdown-nav li {
     position:relative;
+    border-bottom: 1px solid #fff;
 }
 
 .dropdown-nav li a {

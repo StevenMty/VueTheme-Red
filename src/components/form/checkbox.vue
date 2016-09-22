@@ -18,7 +18,6 @@
     width: 120px;
     height: 30px;
     text-align: left;
-    /*background-color: red;*/
   }
   input[type=checkbox] {
     -webkit-appearance: none;

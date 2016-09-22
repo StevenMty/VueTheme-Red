@@ -13,9 +13,8 @@
     height:30px;
     text-align: left;
   }
-
   input[type=radio]{
-    /*-webkit-appearance: none;
+    -webkit-appearance: none;
     appearance: none;
     width: 13px;
     height: 13px;
@@ -32,26 +31,21 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
-    transition: .28s;*/
-
+    transition: .28s;
   }
   input[type=radio]:focus{
     outline:none;
-
   }
-
   input[type=radio]:active {
     border-color: #c6c6c6;
     background: #ebebeb;
   }
-
   input[type=checkbox]:hover {
     border-color: #c6c6c6;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
   }
-
   input[type=radio] {
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
@@ -74,7 +68,6 @@
     -moz-border-radius: 1em;
     border-radius: 1em;
   }
-
 </style>
 <script>
   module.exports = {
@@ -96,5 +89,4 @@
       }
     }
   };
-
 </script>

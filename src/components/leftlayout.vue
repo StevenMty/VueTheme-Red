@@ -35,13 +35,13 @@
     padding: 0;
   }
   .admin-panel{
-    width: 90% !important;
+    width: 100% !important;
     background-color: #F7F7F7;
-    margin-top: 75px;
   }
   .row{
     width: 100%;
     display: flex;
+    flex-flow: row;
   }
   .leftmenu-borad{
     width: 175px !important;
@@ -58,13 +58,17 @@
     font-size: 1.5em;
     position: absolute;
     cursor: pointer;
-    top: 50%;visibility: hidden;
+    top: 50%;
+    display: block;
+  }
+  .col-md-10{
+    margin: 0 auto;
   }
   @media screen and (max-width: 780px){
   .leftmenu-borad{
     /*animation:move 0.5s infinite;
     -webkit-animation:move 0.5s infinite;*/
-    visibility: hidden;
+    display: none;
   }
    /*.button-hide{
     visibility: visible;

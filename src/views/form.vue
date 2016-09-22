@@ -3,21 +3,24 @@
     <!--input-->
     <div class="col-md-12 col-lg-12">
       <h2>Input</h2>
-      <mdinput :value.sync="firstName">
+      <mdinput :value.sync="firstName" class="move-P">
         <label slot="input-lable">FirstName</label>
+        <p></p>
+        <p></p>
       </mdinput>
-      <mdinput :value.sync="lastName">
+      <mdinput :value.sync="lastName" class="move-P">
         <label slot="input-lable">LastName</label>
+        <p></p>
+        <p></p>
       </mdinput>
-      <span>firstName:{{firstName}}   lastName:{{lastName}}</span>
+      <span class="name-f">firstName:<span style="color:red">{{firstName}}</span></span>
+      <span class="name-f">lastName:<span style="color:red">{{lastName}}</span></span>
     </div>
-
-
     <!--radio-->
     <div class="col-md-12 col-lg-12">
       <h2>Radio</h2>
-      <span>Select your like color:['{{radio}}']</span>
-      <mdradio :value.sync="radio" radio-value="green" :name.sync="radio"><label slot="radio-text">Green</label>
+      <span class="select-c">Select your like color:['{{radio}}']</span>
+      <mdradio :value.sync="radio" radio-value="green" :name.sync="radio"><label slot="radio-text" >Green</label>
       </mdradio>
       <mdradio :value.sync="radio" radio-value="yellow" :name.sync="radio"><label slot="radio-text">Yellow</label>
       </mdradio>
@@ -26,18 +29,13 @@
     <div class="col-md-12 col-lg-12">
       <h2>CheckBox</h2>
       <div style="text-align: left">
-
-        <p>Your hobbies: {</p>
-        <p>"basketball":{{checkbox.basketball}}</p>
-        <p>"football":{{checkbox.football}}</p>
-        <p>}</p>
+        <p>Your hobbies: {<p>"basketball":{{checkbox.basketball}}</p><p>"football":{{checkbox.football}}</p>}</p>
       </div>
       <mdcheckbox :value.sync="checkbox.basketball" checkbox-value="green" :name.sync="checkbox1"><label
         slot="checkbox-text">Basketball</label></mdcheckbox>
         <mdcheckbox :value.sync="checkbox.football" checkbox-value="yellow" :name.sync="checkbox2"><label
           slot="checkbox-text">Football</label></mdcheckbox>
         </div>
-
         <!-- Select -->
         <div class="col-md-12 col-lg-12">
           <h2>Select</h2>
@@ -182,4 +180,23 @@
 
   };
 </script>
+<style type="text/css">
+  .name-f{
+    display: inline-block;
+    background-color: #ccc;
+    color: white;
+    min-width: 150px;
+  }
+   .select-c{
+    display: inline-block;
+    width: 200px;
+    background-color: #ccc;
+   }
+  @media (mcol-md-12ax-width: 780px){
+    .col-md-12{
+      width: 100%;
+    }
+  }
+
+</style>
 

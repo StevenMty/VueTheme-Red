@@ -108,7 +108,6 @@
   .input:focus {
     outline: none;
     border-bottom: 2px solid red;
-    transform: scaleX(1);
   }
 
   .input-lable {

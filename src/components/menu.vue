@@ -1,7 +1,7 @@
 <template>
 <div class="fixedeasein" :class="{'navbar-fixed-top':navIsShow}">
 <!-- <div class="navbar " v-el:navmenu> -->
-      <div class="container navborder-red">
+      <div class="container navborder-red" :style="{ background: bgColor}">
         <div class="navbar-header">
           <button class="navbar-toggle" type="button" @click="showMenu">
             <span class="icon-bar" :class="{xbar:isShow}"></span>
@@ -14,6 +14,16 @@
           <ul class="nav navbar-nav navbar-right" :class="{showtranslate:isShow}">
             <li v-for="menu in data"><a href="/#{{menu.url}}">{{menu.text}}</a></li>
             <li class="hidden-sm"><a href="#">About</a></li>
+            <li class="bgc-navbar">
+              NAVBAR-BGC
+              <ul class="navbar-f">
+                <li><p class="bgc-One" style="background-color:#EE9A00;" @click="changeColor('#EE9A00')"></p></li>
+                <li><p class="bgc-Two" style="background-color:#8DB6CD;" @click="changeColor('#8DB6CD')"></p></li>
+                <li><p class="bgc-three" style="background-color:#7D26CD;" @click="changeColor('#7D26CD')"></p></li>
+                <li><p class="bgc-four" style="background-color:#008B45;" @click="changeColor('#008B45')"></p></li>
+                <li><p class="bgc-five" style="background-color:#8B8386;" @click="changeColor('#8B8386')"></p></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -25,7 +35,9 @@
    data() {
      return {
        isShow: false,
-       navIsShow: false
+       navIsShow: false,
+       bgColor:'#2196F3',
+       show:false
      };
    },
    methods: {
@@ -45,11 +57,58 @@
            this.navIsShow = true;
          }, 500);
        };
+     },
+     changeColor(color){
+      this.bgColor = color;
+     },
+     test(){
+      alert(111)
      }
    }
  };
 </script>
 <style type="text/css">
+@keyframes down {
+  0%{top: 0px}
+  25%{top: 20px}
+  40%{top: 40px}
+  60%{top: 60px}
+  80%{top: 80px}
+  100%{top: 100px}
+}
+.navbar-f{
+  /*background-color: red;*/
+  position: fixed;
+  width: 103px;
+  top: 100px;
+  display: none;
+  z-index: 2;
+  box-shadow: 2px 2px  5px #ccc;
+  text-align: center;
+  animation: down .5s ease-out 1;
+}
+.navbar-f>li{
+  width: 100%;
+  height: 35px;
+  border:none;
+  position: relative;
+  border-top: 1px solid #ccc;
+   transition: 2s;
+  -moz-transition: 2s; /* Firefox 4 */
+  -webkit-transition: 2s; /* Safari 和 Chrome */
+  -o-transition: 2s; /* Opera */
+}
+.navbar-f>li>p{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: 44px;
+  top: 10px;
+}
+.bgc-navbar:hover>.navbar-f{
+  display: block;
+}
 * ul{
   margin: 0;
   padding: 0;
@@ -71,6 +130,9 @@ body{
   transition: visibility .5s ease;
   visibility: visible;
 }
+.navbar-header{
+  width: 260px !important;
+}
 .navbar-brand{
   font-size: 2em;
   padding-top: 15%;
@@ -78,15 +140,14 @@ body{
   font-weight: bold;
 }
 .navbar-right{
-  background-color: #2196F3;
   display: flex;
 }
 .navborder-red {
-  background-color: #2196F3;
   width: 100%;
+  min-height: 100px;
+  max-height: 100px;
   position: fixed;
   top: 0;
-  left: center;
   z-index: 9999;
 }
 .navborder-red .icon-bar {
@@ -109,7 +170,26 @@ body{
     cursor: pointer;
     width: 100%;
 }
+.bgc-navbar{
+  font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    display: inline-block;
+    line-height: 30px;
+    cursor: pointer;
+}
 .navbar-nav>li>a:hover{
+  text-decoration: none;
+  background-color: #3F51B5 ;
+}
+.bgc-navbar:hover{
   text-decoration: none;
   background-color: #3F51B5 ;
 }
@@ -123,6 +203,9 @@ body{
 }
 .showtranslate{
   transform: translate3d(0px, 0px, 0px)!important;
+}
+.bgc-title{
+
 }
 @media (max-width: 780px) {
   .navbar-brand{

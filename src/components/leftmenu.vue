@@ -53,14 +53,14 @@
   padding: 0;
 }
 .navbar{
-    width: 100% !important;
+    width: 173px !important;
   }
 ul.left-menu{
   list-style: none;
 }
 ul.left-menu li{
-    /*min-height: 40px;
-    line-height: 40px;*/
+    min-height: 40px;
+    line-height: 40px;
     border: none !important;
     background-color: #fff;
 }
