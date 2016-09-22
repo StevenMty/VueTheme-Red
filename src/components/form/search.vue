@@ -62,7 +62,7 @@ Taoxin   2016-05-19
 
  <style type="text/css">
  .search-bar{
-    width: 600px;display: flex;
+    width: 598px;display: flex;
     border:1px solid #ccc;
  }
  .dropdown-search-bar{
@@ -71,12 +71,15 @@ Taoxin   2016-05-19
  .btn-search-bar{
     width: 100px;
     height: 35px;
-
+    padding: 0 !important;
+    margin: 0 !important;
  }
 .input-search-bar{
     width: 416px;
     height: 35px;
     border-radius: 0px;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 .input-search-bar:focus{
     border-radius: 0px;
