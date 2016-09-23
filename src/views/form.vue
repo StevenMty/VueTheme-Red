@@ -5,14 +5,24 @@
       <h2>Input</h2>
       <mdinput :value.sync="firstName" class="move-P">
         <label slot="input-lable">FirstName</label>
-        <p></p>
-        <p></p>
       </mdinput>
       <mdinput :value.sync="lastName" class="move-P">
         <label slot="input-lable">LastName</label>
-        <p></p>
-        <p></p>
       </mdinput>
+      <div class="two-Input">
+        <span class="span-O">
+        <input type="text" name="firstName" placeholde="firstName" class="input-O" @blur="checkSearch" v-model="seach">
+        <label class="input-L" @click='narrow' :style="{ width:swidth }">
+          <span class="span-T">firstName</span>
+        </label>
+      </span>
+      <span class="span-O span-A">
+        <input type="text" name="firstName" placeholde="firstName" class="input-O" @blur="checkSearchA" v-model="seachA">
+        <label class="input-A" @click='narrowA' :style="{ width:swidthA }">
+          <span class="span-A">lastName</span>
+        </label>
+      </span>
+      </div>
       <span class="name-f">firstName:<span style="color:red">{{firstName}}</span></span>
       <span class="name-f">lastName:<span style="color:red">{{lastName}}</span></span>
     </div>
@@ -150,7 +160,11 @@
           showColse2:true,
           time: 60,       // 验证码限制时间
           start: false,     // 验证码限制是否开启
-          currentPageVariable:1
+          currentPageVariable:1,
+          swidth: '100%',
+          search:'',
+          swidthA: '100%',
+          searchA:''
       };
     },
     watch: {
@@ -176,6 +190,27 @@
       startSend(){
         this.start = true;
       },
+      //宽度缩小
+      narrow(){
+        this.swidth = '30%';
+      },
+      checkSearch(){
+        if(this.seach){
+            debugger;
+        }else{
+          this.swidth='100%';
+        }
+      },
+      narrowA(){
+        this.swidthA = '30%';
+      },
+      checkSearchA(){
+        if(this.seachA){
+            debugger;
+        }else{
+          this.swidthA='100%';
+        }
+      }
     }
 
   };
@@ -187,16 +222,63 @@
     color: white;
     min-width: 150px;
   }
+  .two-Input{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+  }
    .select-c{
     display: inline-block;
     width: 200px;
     background-color: #ccc;
+   }
+   .span-O{
+    display: inline-block;
+    width: 30%;
+    height: 40px;
+    position: relative;
+   }
+
+   .input-O{
+    width: 100% !important;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+    border:none;
+   }
+   .input-L{
+    display: inline-block;
+    width: 100%;
+    height: 100%;position: absolute;
+    right: 0;
+    top: 0;
+    text-align: left;
+    line-height: 40px;
+    border:none;
+    transition: all 1s;
+    background-color: #ccc;
+    padding-left: 15px;
+   }
+   .input-A{
+    display: inline-block;
+    width: 100%;
+    height: 100%;position: absolute;
+    right: 0;
+    top: 0;
+    text-align: left;
+    line-height: 40px;
+    border:none;
+    transition: all 1s;
+    background-color: #ccc;
+    padding-left: 15px;
    }
   @media (mcol-md-12ax-width: 780px){
     .col-md-12{
       width: 100%;
     }
   }
-
 </style>
 

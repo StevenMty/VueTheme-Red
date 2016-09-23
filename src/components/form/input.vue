@@ -17,7 +17,6 @@
            @focus="activateField"
            @blur="deactivateField"
            class="input"/>
-
   </div>
 </template>
 <script>
