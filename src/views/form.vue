@@ -12,13 +12,13 @@
       <div class="two-Input">
         <span class="span-O">
         <input type="text" name="firstName" placeholde="firstName" class="input-O" @blur="checkSearch" v-model="seach">
-        <label class="input-L" @click='narrow' :style="{ width:swidth }">
+        <label class="input-L" @click='narrow' :style="{ width:swidth,background:bgColor }">
           <span class="span-T">firstName</span>
         </label>
       </span>
       <span class="span-O span-A">
         <input type="text" name="firstName" placeholde="firstName" class="input-O" @blur="checkSearchA" v-model="seachA">
-        <label class="input-A" @click='narrowA' :style="{ width:swidthA }">
+        <label class="input-A" @click='narrowA' :style="{ width:swidthA,background:bgColorA }">
           <span class="span-A">lastName</span>
         </label>
       </span>
@@ -164,7 +164,9 @@
           swidth: '100%',
           search:'',
           swidthA: '100%',
-          searchA:''
+          searchA:'',
+          bgColor:'#ccc',
+          bgColorA:'#ccc'
       };
     },
     watch: {
@@ -193,22 +195,26 @@
       //宽度缩小
       narrow(){
         this.swidth = '30%';
+        this.bgColor='black';
       },
       checkSearch(){
         if(this.seach){
             debugger;
         }else{
           this.swidth='100%';
+          this.bgColor='#ccc';
         }
       },
       narrowA(){
         this.swidthA = '30%';
+        this.bgColorA='black';
       },
       checkSearchA(){
         if(this.seachA){
             debugger;
         }else{
           this.swidthA='100%';
+          this.bgColorA='#ccc';
         }
       }
     }
