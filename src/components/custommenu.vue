@@ -7,7 +7,7 @@
             <li  v-for="child in menu.childItem" class="first-li">
               <div class="subs-content">
                 <div class="subs-title"><img src="http://temp.im/24x24">{{child.text}}</div>
-                 <a v-for="sub in child.subItems" class="subs-text-a" style="border:none;float:left;magin-left:30px;width:auto;" href="http://www.baidu.com" target="_blank">{{sub.text}}</a>
+                 <a v-for="sub in child.subItems" class="subs-text-a" style="border:none;float:left;padding-left:40px;width:auto;" href="http://www.baidu.com" target="_blank">{{sub.text}}</a>
               </div>
             </li>
           </ul>
