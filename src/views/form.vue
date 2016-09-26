@@ -11,13 +11,13 @@
       </mdinput>
       <div class="two-Input">
         <span class="span-O">
-        <input type="text" name="firstName" placeholde="firstName" class="input-O" @blur="checkSearch" v-model="seach">
+        <input type="text" class="input-O" @blur="checkSearch" v-model="seach">
         <label class="input-L" @click='narrow' :style="{ width:swidth,background:bgColor }">
           <span class="span-T">firstName</span>
         </label>
       </span>
       <span class="span-O span-A">
-        <input type="text" name="firstName" placeholde="firstName" class="input-O" @blur="checkSearchA" v-model="seachA">
+        <input type="text" class="input-O" @blur="checkSearchA" v-model="seachA">
         <label class="input-A" @click='narrowA' :style="{ width:swidthA,background:bgColorA }">
           <span class="span-A">lastName</span>
         </label>
@@ -194,8 +194,8 @@
       },
       //宽度缩小
       narrow(){
-        this.swidth = '30%';
-        this.bgColor='black';
+        this.swidth = '32%';
+        this.bgColor='#fff';
       },
       checkSearch(){
         if(this.seach){
@@ -206,8 +206,8 @@
         }
       },
       narrowA(){
-        this.swidthA = '30%';
-        this.bgColorA='black';
+        this.swidthA = '32%';
+        this.bgColorA='#fff';
       },
       checkSearchA(){
         if(this.seachA){
@@ -218,7 +218,6 @@
         }
       }
     }
-
   };
 </script>
 <style type="text/css">
@@ -247,13 +246,13 @@
     height: 40px;
     position: relative;
    }
-
    .input-O{
     width: 100% !important;
     width: 100%;
     height: 40px;
     z-index: 1;
     border:none;
+    outline:none;
    }
    .input-L{
     display: inline-block;
